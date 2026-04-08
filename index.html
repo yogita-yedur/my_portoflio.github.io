@@ -1,115 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
 
 <header>
-    <h1>My Portfolio</h1>
-    <button onclick="toggleDarkMode()">🌙</button>
+  <h2>My Portfolio</h2>
+  <button onclick="toggleDarkMode()">🌙</button>
 </header>
 
-<nav>
-    <a href="#home">Home</a>
-    <a href="#about">About</a>
-    <a href="#achievements">Achievements</a>
-    <a href="#projects">Projects</a>
-    <a href="#gallery">Gallery</a>
-    <a href="#contact">Contact</a>
-</nav>
-
 <!-- HOME -->
-<section id="home">
-    <img src="assets/images/profile.jpg" alt="My Photo" class="profile">
-    <h2>Your Name</h2>
-    <p>Hi, I'm a passionate student interested in AI, design, and development.</p>
+<section class="home">
+  <img src="assets/images/profile.jpg" class="profile">
+  <h1>Your Name</h1>
+  <p class="intro">A passionate student interested in AI, design, and technology.</p>
 </section>
 
 <!-- ABOUT -->
-<section id="about">
-    <h2>About Me</h2>
-    <p><b>Education:</b> Your college/school</p>
-    <p><b>Interests:</b> AI, Coding, Design</p>
-    <p><b>Goals:</b> Become a software developer</p>
-    <p><b>Strengths:</b> Problem solving, creativity</p>
+<section class="about">
+  <h2>About Me</h2>
+
+  <div class="about-box">
+    <p><b>🎓 Education:</b> Your school/college details</p>
+    <p><b>🎯 Goals:</b> Your career goals</p>
+    <p><b>🏆 Achievements:</b> Quick highlight of achievements</p>
+    <p><b>💪 Strengths:</b> Your strengths</p>
+  </div>
 </section>
 
 <!-- ACHIEVEMENTS -->
-<section id="achievements">
-    <h2>Achievements</h2>
+<section class="achievements">
+  <h2>Certificates & Achievements</h2>
 
-    <div class="card">
-        <h3>Coursera Certificate</h3>
-        <img src="assets/images/certificates/coursera.jpg">
-        <p>Completed AI course from Coursera.</p>
-    </div>
+  <div class="card">
+    <img src="assets/images/certificates/coursera.jpg">
+    <p>Coursera Certificate</p>
+  </div>
 
-    <div class="card">
-        <h3>Netacad Certificate</h3>
-        <img src="assets/images/certificates/netacad.jpg">
-        <p>Networking fundamentals certification.</p>
-    </div>
+  <div class="card">
+    <img src="assets/images/certificates/netacad.jpg">
+    <p>Netacad Certificate</p>
+  </div>
 
-    <div class="card">
-        <h3>Yuva AI Certificate</h3>
-        <img src="assets/images/certificates/yuva.jpg">
-        <p>AI awareness program completion.</p>
-    </div>
+  <div class="card">
+    <img src="assets/images/certificates/yuva.jpg">
+    <p>Yuva AI Certificate</p>
+  </div>
 
-</section>
-
-<!-- PROJECTS -->
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div class="card">
-        <h3>AI4A Project</h3>
-        <img src="assets/images/project1.png">
-        <p>Description of AI4A project.</p>
-        <a href="#">View Project</a>
-    </div>
-
-    <div class="card">
-        <h3>Design Thinking Project</h3>
-        <img src="assets/images/project2.png">
-        <p>Description of Design Thinking project.</p>
-        <a href="#">View Project</a>
-    </div>
-
-    <div class="card">
-        <h3>ACE Project</h3>
-        <img src="assets/images/project3.png">
-        <p>Description of ACE project.</p>
-        <a href="#">View Project</a>
-    </div>
-
-</section>
-
-<!-- GALLERY -->
-<section id="gallery">
-    <h2>Gallery</h2>
-    <img src="assets/images/gallery/img1.jpg">
-    <img src="assets/images/gallery/img2.jpg">
-    <img src="assets/images/gallery/img3.jpg">
 </section>
 
 <!-- CONTACT -->
-<section id="contact">
-    <h2>Contact</h2>
-    <p>Email: your@email.com</p>
-    <p>Phone: 1234567890</p>
-    <p>
-        <a href="#">LinkedIn</a> |
-        <a href="#">GitHub</a>
-    </p>
+<section class="contact">
+  <h2>Contact Me</h2>
+
+  <p>📧 Email: your@email.com</p>
+  <p>📱 Phone: 1234567890</p>
+  <p>🔗 LinkedIn: <a href="#">Your LinkedIn</a></p>
+  <p>💻 GitHub: <a href="#">Your GitHub</a></p>
+
 </section>
 
 <footer>
-    <p>© 2026 My Portfolio</p>
+  <p>© 2026 My Portfolio</p>
 </footer>
 
 <script src="js/script.js"></script>
