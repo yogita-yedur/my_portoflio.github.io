@@ -1,0 +1,70 @@
+body {
+    font-family: Arial;
+    margin: 0;
+    background: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    background: #555;
+    padding: 10px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+.profile {
+    width: 150px;
+    border-radius: 50%;
+}
+
+.card {
+    background: white;
+    padding: 10px;
+    margin: 10px 0;
+    box-shadow: 0 0 5px gray;
+}
+
+.card img {
+    width: 100%;
+}
+
+#gallery img {
+    width: 30%;
+    margin: 5px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+.dark-mode header,
+.dark-mode nav,
+.dark-mode footer {
+    background: black;
+}
