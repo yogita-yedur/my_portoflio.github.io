@@ -1,86 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-  <h2>My Portfolio</h2>
-  <button onclick="toggleDarkMode()">🌙</button>
-</header>
+<!-- Navbar -->
+<nav>
+    <h2>My Portfolio</h2>
+    <ul>
+        <li><a href="#intro">Introduction</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#goals">Goals</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-<!-- HOME -->
-<section class="home">
-  <img src="assets/images/profile.jpg" class="profile">
-  <h1>Yogita Yedur</h1>
-  <p class="intro">Hi, I’m Yogita. I’m currently pursuing my B.Tech in CSE. I have a strong interest in Artificial Intelligence and love exploring how technology can solve real-world problems. Apart from academics, I’m passionate about dance and enjoy travelling, which helps me stay creative and refreshed.”</p>
+<!-- Introduction -->
+<section id="intro" class="section">
+    <h1>Welcome 👋</h1>
+    <p>This is my personal portfolio website.</p>
 </section>
 
-<!-- ABOUT -->
-<section class="about">
-  <h2>About Me</h2>
-
-  <div class="about-box">
-    <p><b>🎓 Education:</b> I completed my schooling from S.S.E. Med High School, where I built a strong foundation in academics.
-
-For my higher secondary education, I studied externally through Chandak Jr College, which helped me develop self-discipline and independent learning skills.
-
-Along with this, I also prepared for JEE through tutorials, which improved my problem-solving ability and analytical thinking.
-
-Currently, I am pursuing B.Tech in Computer Science Engineering from MIT Vishwaprayag University (MITVPU), where I am developing my skills in programming, artificial intelligence, and modern technologies. </p>
-    <p><b>🎯 Goals:</b>My goal is to successfully complete my B.Tech in Computer Science with a strong academic foundation and practical skills. I aim to pursue an M.Tech from a reputed institution to deepen my knowledge, especially in fields like Artificial Intelligence. Ultimately, I aspire to build a successful career by contributing to leading technology companies and working on impactful, real-world innovations.”</p>
-    <p><b>🏆 Achievements:</b> Received a cash prize for excellent handwriting in school.
-Won prizes in interschool competitions, showcasing creativity and participation.</p>
-    <p><b>💪 Strengths:</b>Strong interest in Artificial Intelligence and continuous learning
-Creative mindset, developed through dance and artistic expression
-Adaptability and openness to new experiences, gained through travelling
-Good attention to detail, reflected in handwriting achievement
-Active participation and competitive spirit, shown through interschool competitions
-Balanced personality, combining technical skills with creativity</p>
-  </div>
+<!-- About Me -->
+<section id="about" class="section">
+    <h2>About Me</h2>
+    <p>
+        I am interested in AI, dancing, and traveling. I am currently pursuing my BTech
+        and aiming for higher studies in AI.
+    </p>
 </section>
 
-<!-- ACHIEVEMENTS -->
-<section class="achievements">
-  <h2>Certificates & Achievements</h2>
-
-  <div class="card">
-    <img src="assets/images/certificates/coursera.jpg">
-    <p>Coursera Certificate</p>
-  </div>
-
-  <div class="card">
-    <img src="assets/images/certificates/netacad.jpg">
-    <p>Netacad Certificate</p>
-  </div>
-
-  <div class="card">
-    <img src="assets/images/certificates/yuva.jpg">
-    <p>Yuva AI Certificate</p>
-  </div>
-
+<!-- Goals -->
+<section id="goals" class="section">
+    <h2>Goals</h2>
+    <p>
+        My goal is to complete BTech with a high CGPA, pursue MTech in top universities,
+        and get placed in a reputed company.
+    </p>
 </section>
 
-<!-- CONTACT -->
-<section class="contact">
-  <h2>Contact Me</h2>
+<!-- Projects -->
+<section id="project" class="section">
+    <h2>Project Overview</h2>
+    <p>Coming soon... (You can add your projects here)</p>
+</section>
 
-  <p>📧 Email: yogitayedur24@gmail.com</p>
-  <p>📱 Phone: 9172780565</p>
-  <p>🔗 LinkedIn: <a Yogita Yedur></a></p>
-  <p>💻 GitHub: <a yogita-yedur>Your GitHub</a></p>
+<!-- Achievements -->
+<section class="section">
+    <h2>Achievements</h2>
+    <ul>
+        <li>Won prize for good handwriting</li>
+        <li>Participated in competitions</li>
+    </ul>
+</section>
 
+<!-- Contact -->
+<section id="contact" class="section">
+    <h2>Contact</h2>
+    <button onclick="showMessage()">Click Me</button>
+    <p id="msg"></p>
 </section>
 
 <footer>
-  <p>© 2026 My Portfolio</p>
+    <p>© 2026 My Portfolio</p>
 </footer>
 
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
