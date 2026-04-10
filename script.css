@@ -1,57 +1,94 @@
 body {
-  margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #f5efe6;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
-.container {
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  height: 100vh;
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #ba68c8;
+    color: white;
 }
 
-/* Each slide */
-.slide {
-  height: 100vh;
-  scroll-snap-align: start;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 40px;
-  text-align: center;
+nav ul {
+    display: flex;
+    list-style: none;
 }
 
-/* Alternate colors like Canva */
-.slide:nth-child(odd) {
-  background: #6a4c93;
-  color: white;
+nav ul li {
+    margin-left: 20px;
 }
 
-.slide:nth-child(even) {
-  background: #f5efe6;
-  color: #333;
+nav ul li a {
+    color: white;
+    text-decoration: none;
 }
 
-/* Headings */
-h1 {
-  font-size: 60px;
-  margin-bottom: 10px;
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1492724441997-5dc865305da7') no-repeat center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background: rgba(186, 104, 200, 0.7);
+    padding: 50px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+}
+
+.overlay h1 {
+    font-size: 55px;
+}
+
+/* Sections */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+    background: #ba68c8;
+    color: white;
+}
+
+.section.light {
+    background: #f8bbd0;
+    color: #333;
 }
 
 h2 {
-  font-size: 40px;
-  margin-bottom: 20px;
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
-h3 {
-  font-size: 24px;
-  opacity: 0.8;
+/* Skills */
+.skills-box {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
-/* Paragraph */
-p {
-  max-width: 600px;
-  font-size: 18px;
-  line-height: 1.6;
+.card {
+    background: white;
+    color: #ba68c8;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    background: #ba68c8;
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
