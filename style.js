@@ -1,3 +1,3 @@
-function toggleDarkMode() {
-  document.body.classList.toggle("dark-mode");
+function showMessage() {
+    document.getElementById("msg").innerText = "Thanks for visiting my portfolio 😊";
 }
