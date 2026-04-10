@@ -1,78 +1,57 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
 body {
-    background: #f5f0e6;
-    color: #333;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f5efe6;
 }
 
-/* Navbar */
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #6a4c93;
-    padding: 15px 30px;
-    color: white;
+.container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
+/* Each slide */
+.slide {
+  height: 100vh;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
 }
 
-nav ul li {
-    margin-left: 20px;
+/* Alternate colors like Canva */
+.slide:nth-child(odd) {
+  background: #6a4c93;
+  color: white;
 }
 
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
+.slide:nth-child(even) {
+  background: #f5efe6;
+  color: #333;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
+/* Headings */
+h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
 }
 
-/* Sections */
-.section {
-    padding: 60px 20px;
-    text-align: center;
+h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
-h1, h2 {
-    margin-bottom: 20px;
-    color: #6a4c93;
+h3 {
+  font-size: 24px;
+  opacity: 0.8;
 }
 
+/* Paragraph */
 p {
-    max-width: 600px;
-    margin: auto;
-}
-
-/* Button */
-button {
-    padding: 10px 20px;
-    background: #6a4c93;
-    color: white;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-}
-
-button:hover {
-    background: #4b2e6d;
-}
-
-/* Footer */
-footer {
-    background: #6a4c93;
-    color: white;
-    text-align: center;
-    padding: 15px;
+  max-width: 600px;
+  font-size: 18px;
+  line-height: 1.6;
 }
